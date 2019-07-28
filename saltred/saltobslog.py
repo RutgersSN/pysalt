@@ -118,13 +118,13 @@ def createobslogfits(headerDict):
    # define generic columns of output table
    col=[]
    for k, f in zip(headerList, formatList):
-       print k,f, headerDict[k]
+       print (k,f, headerDict[k])
        col.append(fits.Column(name=k, format=f, array=headerDict[k]))
    for k, f in zip(scamheaderList, scamformatList):
-       print k,f, headerDict[k]
+       print (k,f, headerDict[k])
        col.append(fits.Column(name=k, format=f, array=headerDict[k]))
    for k, f in zip(rssheaderList, rssformatList):
-       print k,f, headerDict[k]
+       print (k,f, headerDict[k])
        col.append(fits.Column(name=k, format=f, array=headerDict[k]))
 
    # construct FITS table from columns

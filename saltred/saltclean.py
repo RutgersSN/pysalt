@@ -396,7 +396,7 @@ def createmasterbiasname(infiles, biaskeys):
     obsdate=saltstring.makeobsdatestr(infiles)
         
     #if len(obsdate)<4: obsdate=''
-    print obsdate
+    print (obsdate)
 
     #set the mode string
     mdstr=saltstring.makedetmodestr(biaskeys[1])
@@ -445,7 +445,7 @@ def createmasterflatname(infiles, flatkeys):
     obsdate=saltstring.makeobsdatestr(infiles)
         
     #if len(obsdate)<4: obsdate=''
-    print obsdate
+    print (obsdate)
 
     #set the mode string
     mdstr=saltstring.makedetmodestr(flatkeys[1])
